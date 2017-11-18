@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4174488D-244B-45C5-B34B-D12C1BB60E81}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>李崇維_HW</RootNamespace>
+    <AssemblyName>李崇維_HW</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1.Frmcustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1.Frmcustomers.Designer.cs">
+      <DependentUpon>1.Frmcustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2.FrmCategoryProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2.FrmCategoryProducts.Designer.cs">
+      <DependentUpon>2.FrmCategoryProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3.FrmProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3.FrmProducts.Designer.cs">
+      <DependentUpon>3.FrmProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="4.FrmAdventureWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="4.FrmAdventureWork.Designer.cs">
+      <DependentUpon>4.FrmAdventureWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdventureWorkDataSet.cs">
+      <DependentUpon>AdventureWorkDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AdventureWorkDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdventureWorkDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="5.LogOn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="5.LogOn.Designer.cs">
+      <DependentUpon>5.LogOn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="6.Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="6.Main.Designer.cs">
+      <DependentUpon>6.Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NorWindDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorWindDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="7.FrmTestTreeViewListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="7.FrmTestTreeViewListView.Designer.cs">
+      <DependentUpon>7.FrmTestTreeViewListView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="1.Frmcustomers.resx">
+      <DependentUpon>1.Frmcustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2.FrmCategoryProducts.resx">
+      <DependentUpon>2.FrmCategoryProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3.FrmProducts.resx">
+      <DependentUpon>3.FrmProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="4.FrmAdventureWork.resx">
+      <DependentUpon>4.FrmAdventureWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="5.LogOn.resx">
+      <DependentUpon>5.LogOn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="6.Main.resx">
+      <DependentUpon>6.Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="7.FrmTestTreeViewListView.resx">
+      <DependentUpon>7.FrmTestTreeViewListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="AdventureWorkDataSet.xsc">
+      <DependentUpon>AdventureWorkDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AdventureWorkDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AdventureWorkDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AdventureWorkDataSet.xss">
+      <DependentUpon>AdventureWorkDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NorWindDataSet.xsc">
+      <DependentUpon>NorWindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NorWindDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NorWindDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NorWindDataSet.xss">
+      <DependentUpon>NorWindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
