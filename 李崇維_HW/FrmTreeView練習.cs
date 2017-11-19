@@ -52,29 +52,25 @@ namespace 李崇維_HW
             }
 
         }
+        
+
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            //var sqlText = string.Empty;
-            //sqlText = @"select 
-            //                OrderID,
-            //                CustomerID,
-            //                ShipName,
-            //                ShipCity,
-            //                ShipAddress
-            //            from
-            //                Orders
-            //            where
-            //                OrderID =@orderid;";
-            //using (var con = new SqlConnection(Settings.Default.NorthwindConnectionString))
-            //using (var adp = new SqlDataAdapter(sqlText, con))
-            //{
-            //    adp.SelectCommand.Parameters.Add("Or", SqlDbType.Int).Value = OrderID;
-                
-
-                
-                
-            //}
+            if(e.Node.Parent ==null)
+            {
+                string click0 = e.Node.Text;
+                this.ordersTableAdapter1.FillByCustomerID(this.norWindDataSet1.Orders, click0);
+                this.ordersBindingSource.DataSource = this.norWindDataSet1.Orders;
+                this.dataGridView1.DataSource = this.ordersBindingSource;               
+            }
+            else
+            {
+                int click01 = int.Parse(e.Node.Text);
+                this.ordersTableAdapter1.FillByOrderID(this.norWindDataSet1.Orders, click01);
+                this.ordersBindingSource.DataSource = this.norWindDataSet1.Orders;
+                this.dataGridView1.DataSource = this.ordersBindingSource;
+            }
         }
     }
 }
