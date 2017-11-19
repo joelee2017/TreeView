@@ -16,7 +16,7 @@ namespace 李崇維_HW
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmTestTreeViewListView());
+            Application.Run(new FrmTreeView練習());
         }
     }
 }
